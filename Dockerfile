@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build-env
 
 WORKDIR /app/src/DotNetCoreHelloFromAppSettings
 COPY . /app
-COPY MyReconfScriptTest.sh /app
+COPY MyReconfScriptTest.sh /app/
 #ADD MyReconfScriptTest.sh /app
 
 RUN dotnet build -c Release -o default DotNetCoreHelloFromAppSettings.csproj
