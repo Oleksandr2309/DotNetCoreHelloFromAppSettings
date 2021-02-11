@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 T1="$HelloValue"
 T2="$HelloEnv"
         if [ "$T1" != "$T2" ]; then
