@@ -1,6 +1,5 @@
 #!/bin/bash
-#echo $Hello
-#echo $HelloValue
+
 
 T1="$HelloValue"
 T2="$HelloEnv"
