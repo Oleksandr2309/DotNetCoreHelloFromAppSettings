@@ -6,7 +6,7 @@ ADD MyReconfScriptTest.sh /app
 
 RUN dotnet build -c Release -o default DotNetCoreHelloFromAppSettings.csproj
 
-RUN cd /app/src/DotNetCoreHelloFromAppSettings && sed -i 's/Hello World/Hello from ENV!/g' appsettings.json && dotnet build -c Release -o test1 DotNetCoreHelloFromAppSettings.csproj
+RUN cd /app/src/DotNetCoreHelloFromAppSettings && sed -i 's/Hello World/Hello there!/g' appsettings.json && dotnet build -c Release -o test1 DotNetCoreHelloFromAppSettings.csproj
 
 ENV HelloEnv=""
 RUN chmod +x /app/MyReconfScriptTest.sh
